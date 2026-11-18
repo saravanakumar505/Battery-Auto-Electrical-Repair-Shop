@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Replace https://your-voltcare-domain.example with your production domain before deployment
+Sitemap: https://your-voltcare-domain.example/sitemap.xml
+

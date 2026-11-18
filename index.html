@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOLTCARE | Battery & Auto Electrical Repair Shop — Powering Every Journey</title>
+  <meta name="description" content="Professional automotive battery testing, battery replacement, electrical diagnostics, starter motor, alternator, and car wiring repair services by VOLTCARE.">
+  <meta name="keywords" content="car battery service, battery testing, battery replacement, auto electrical repair, automotive electrical diagnostics, car wiring repair, alternator inspection, starter motor repair, vehicle lighting repair">
+  <link rel="canonical" href="https://your-voltcare-domain.example/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VOLTCARE | Battery & Auto Electrical Repair Shop — Powering Every Journey">
+  <meta property="og:description" content="Professional automotive battery testing, battery replacement, electrical diagnostics, starter motor, alternator, and car wiring repair services by VOLTCARE.">
+  <meta property="og:url" content="https://your-voltcare-domain.example/index.html">
+  <meta property="og:image" content="https://your-voltcare-domain.example/assets/images/hero/hero-battery-diagnostics.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+
+  <!-- Prevent theme and direction flash before paint -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('voltcare_theme');
+        if (savedTheme === 'dark' || savedTheme === 'light') {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        var savedDir = localStorage.getItem('voltcare_dir');
+        if (savedDir === 'rtl' || savedDir === 'ltr') {
+          document.documentElement.dir = savedDir;
+        }
+        document.documentElement.lang = 'en';
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Google Fonts: Sora, Inter, Roboto Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['selector', '[data-theme="dark"]'],
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Sora', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+            mono: ['Roboto Mono', 'monospace']
+          },
+          colors: {
+            navy: '#172A3A',
+            deepnavy: '#101D29',
+            steel: '#354B5C',
+            amber: {
+              DEFAULT: '#F2A93B',
+              hover: '#DC9228'
+            },
+            silver: '#DCE4EA',
+            ice: '#F5F7F9'
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JSON-LD Structured Data (Configurable Placeholders for Business Owner) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AutoRepair",
+        "name": "VOLTCARE — Battery & Auto Electrical Specialists",
+        "slogan": "Powering Every Journey.",
+        "description": "Professional automotive battery testing, battery replacement, electrical diagnostics, starter motor, alternator, and car wiring repair services by VOLTCARE.",
+        "url": "https://your-voltcare-domain.example",
+        "image": "https://your-voltcare-domain.example/assets/images/hero/hero-battery-diagnostics.jpg",
+        "telephone": "[Configure Business Phone]",
+        "email": "[Configure Business Email]",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "[Configure Workshop Street Address]",
+          "addressLocality": "[Configure City]",
+          "addressRegion": "[Configure Region/State]",
+          "postalCode": "[Configure Postal Code]",
+          "addressCountry": "[Configure Country]"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-theme-bg text-theme-main antialiased selection:bg-amber-400 selection:text-slate-900">
+
+  <!-- Skip to Main Content for Keyboard Accessibility -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-[100] btn-amber">Skip to Main Content</a>
+
+  <!-- Complete Standalone Sticky Navbar -->
+  <header class="site-header" role="banner">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-20 gap-3">
+
+        <!-- Brand Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 shrink-0 focus:outline-none" aria-label="VOLTCARE Home">
+          <svg class="w-10 h-10 shrink-0" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#172A3A"/>
+            <rect x="4" y="4" width="56" height="56" rx="10" stroke="#354B5C" stroke-width="1.5"/>
+            <path d="M18 22H46C48.2091 22 50 23.7909 50 26V44C50 46.2091 48.2091 48 46 48H18C15.7909 48 14 46.2091 14 44V26C14 23.7909 15.7909 22 18 22Z" stroke="#DCE4EA" stroke-width="2.5"/>
+            <rect x="20" y="16" width="8" height="6" rx="1.5" fill="#DCE4EA"/>
+            <rect x="36" y="16" width="8" height="6" rx="1.5" fill="#F2A93B"/>
+            <path d="M34.5 26L25 36.5H32.5L29.5 44L39 33.5H31.5L34.5 26Z" fill="#F2A93B"/>
+          </svg>
+          <div class="flex flex-col justify-center">
+            <span class="font-heading font-extrabold text-lg xl:text-xl tracking-wider text-theme-main block leading-none">VOLT<span class="text-[#F2A93B]">CARE</span></span>
+            <span class="font-mono-tech text-[9px] xl:text-[10px] tracking-widest text-theme-secondary block mt-1 leading-none">AUTO ELECTRICAL</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center justify-center gap-0.5 xl:gap-1" aria-label="Primary Navigation">
+          <!-- Home Dropdown -->
+          <div class="nav-dropdown-wrapper">
+            <button type="button" class="nav-link" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+              <span>Home</span>
+              <svg class="w-3.5 h-3.5 opacity-75 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="index.html" class="dropdown-item" role="menuitem">
+                <span>Home 1 — Primary Workshop</span>
+                <span class="font-mono-tech text-[10px] text-theme-muted">01</span>
+              </a>
+              <a href="pages/home-2.html" class="dropdown-item" role="menuitem">
+                <span>Home 2 — Diagnostic Specialist</span>
+                <span class="font-mono-tech text-[10px] text-theme-muted">02</span>
+              </a>
+            </div>
+          </div>
+
+          <a href="pages/about.html" class="nav-link">About</a>
+
+          <!-- Services Dropdown -->
+          <div class="nav-dropdown-wrapper">
+            <button type="button" class="nav-link" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+              <span>Services</span>
+              <svg class="w-3.5 h-3.5 opacity-75 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="nav-dropdown-menu w-64" role="menu">
+              <a href="pages/services.html" class="dropdown-item font-semibold border-b border-theme mb-1 pb-2" role="menuitem">
+                <span>All Services Directory</span>
+                <span class="font-mono-tech text-[10px] text-[#F2A93B]">10</span>
+              </a>
+              <a href="pages/battery-services.html" class="dropdown-item" role="menuitem">Battery Services</a>
+              <a href="pages/battery-replacement.html" class="dropdown-item" role="menuitem">Battery Replacement</a>
+              <a href="pages/electrical-diagnostics.html" class="dropdown-item" role="menuitem">Electrical Diagnostics</a>
+              <a href="pages/wiring-repair.html" class="dropdown-item" role="menuitem">Wiring Repair</a>
+              <a href="pages/alternator-repair.html" class="dropdown-item" role="menuitem">Alternator Repair</a>
+              <a href="pages/starter-motor-repair.html" class="dropdown-item" role="menuitem">Starter Motor Repair</a>
+              <a href="pages/car-lighting.html" class="dropdown-item" role="menuitem">Car Lighting</a>
+              <a href="pages/battery-maintenance.html" class="dropdown-item" role="menuitem">Battery Maintenance</a>
+            </div>
+          </div>
+
+          <a href="pages/pricing-guide.html" class="nav-link">Pricing Guide</a>
+          <a href="pages/how-it-works.html" class="nav-link">How It Works</a>
+          <a href="pages/faq.html" class="nav-link">FAQ</a>
+          <a href="pages/contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Action Controls: RTL/LTR, Theme Toggle, Book Service CTA, Mobile Hamburger -->
+        <div class="flex items-center gap-2 shrink-0">
+          <!-- Direction Toggle (Shows RTL when in LTR mode, LTR when in RTL mode) -->
+          <button type="button" data-dir-toggle class="inline-flex items-center justify-center px-2.5 h-10 rounded-lg border border-theme bg-theme-muted hover:border-amber-400 text-xs font-mono-tech font-bold text-theme-main transition-colors" aria-label="Switch layout direction to RTL" title="Switch layout to RTL">
+            <span data-dir-label>RTL</span>
+          </button>
+
+          <!-- Light / Dark Theme Toggle (Clean Lucide Sun & Moon SVGs) -->
+          <button type="button" data-theme-toggle class="inline-flex items-center justify-center w-10 h-10 rounded-lg border border-theme bg-theme-muted hover:border-amber-400 text-theme-main transition-colors" aria-label="Toggle Light/Dark Theme">
+            <svg class="theme-icon-sun w-5 h-5 hidden text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            <svg class="theme-icon-moon w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          </button>
+
+          <!-- Primary CTA (Exact 40px h-10 height to align with RTL & Theme buttons) -->
+          <a href="pages/book-service.html" class="hidden sm:inline-flex btn-amber h-10 py-0 px-3.5 xl:px-4 text-xs xl:text-sm">
+            <span>Book a Service</span>
+          </a>
+
+          <!-- Mobile Hamburger Trigger -->
+          <button type="button" data-mobile-menu-open class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-theme bg-theme-muted text-theme-main" aria-label="Open navigation menu" aria-expanded="false">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Backdrop & Drawer -->
+  <div class="mobile-drawer-backdrop" data-mobile-backdrop aria-hidden="true"></div>
+  <aside class="mobile-drawer" data-mobile-drawer aria-label="Mobile Navigation Drawer" aria-hidden="true">
+    <div class="flex items-center justify-between p-5 border-b border-theme">
+      <a href="index.html" class="flex items-center gap-2.5">
+        <span class="font-heading font-extrabold text-lg text-theme-main">VOLT<span class="text-[#F2A93B]">CARE</span></span>
+      </a>
+      <button type="button" data-mobile-menu-close class="w-9 h-9 rounded-lg border border-theme flex items-center justify-center text-theme-main" aria-label="Close mobile menu">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="p-5 flex-1 space-y-2">
+      <!-- Home Submenu -->
+      <div>
+        <button type="button" data-mobile-sub-toggle="mob-home-sub" class="w-full flex items-center justify-between py-2.5 px-3 rounded-lg font-medium text-sm text-theme-main hover:bg-theme-muted" aria-expanded="false">
+          <span>Home Layouts</span>
+          <svg class="sub-chevron w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="mob-home-sub" class="hidden ps-logical-4 mt-1 space-y-1 border-s border-theme">
+          <a href="index.html" class="block py-2 px-3 rounded text-sm text-theme-secondary hover:text-theme-main">Home 1 — Primary Workshop</a>
+          <a href="pages/home-2.html" class="block py-2 px-3 rounded text-sm text-theme-secondary hover:text-theme-main">Home 2 — Diagnostic Specialist</a>
+        </div>
+      </div>
+
+      <a href="pages/about.html" class="block py-2.5 px-3 rounded-lg font-medium text-sm text-theme-main hover:bg-theme-muted">About VOLTCARE</a>
+
+      <!-- Services Submenu -->
+      <div>
+        <button type="button" data-mobile-sub-toggle="mob-services-sub" class="w-full flex items-center justify-between py-2.5 px-3 rounded-lg font-medium text-sm text-theme-main hover:bg-theme-muted" aria-expanded="false">
+          <span>Services</span>
+          <svg class="sub-chevron w-4 h-4 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="mob-services-sub" class="hidden ps-logical-4 mt-1 space-y-1 border-s border-theme">
+          <a href="pages/services.html" class="block py-2 px-3 rounded text-sm font-semibold text-theme-accent">All Services</a>
+          <a href="pages/battery-services.html" class="block py-2 px-3 rounded text-sm text-theme-secondary hover:text-theme-main">Battery Services</a>
+          <a href="pages/battery-replacement.html" class="block py-2 px-3 rounded text-sm text-theme-secondary hover:text-theme-main">Battery Replacement</a>
+          <a href="pages/electrical-diagnostics.html" class="block py-2 px-3 rounded text-sm text-theme-secondary hover:text-theme-main">Electrical Diagnostics</a>
+          <a href="pages/wiring-repair.html" class="block py-2 px-3 rounded text-sm text-theme-secondary hover:text-theme-main">Wiring Repair</a>
+          <a href="pages/alternator-repair.html" class="block py-2 px-3 rounded text-sm text-theme-secondary hover:text-theme-main">Alternator Repair</a>
+          <a href="pages/starter-motor-repair.html" class="block py-2 px-3 rounded text-sm text-theme-secondary hover:text-theme-main">Starter Motor Repair</a>
+          <a href="pages/car-lighting.html" class="block py-2 px-3 rounded text-sm text-theme-secondary hover:text-theme-main">Car Lighting</a>
+          <a href="pages/battery-maintenance.html" class="block py-2 px-3 rounded text-sm text-theme-secondary hover:text-theme-main">Battery Maintenance</a>
+        </div>
+      </div>
+
+      <a href="pages/pricing-guide.html" class="block py-2.5 px-3 rounded-lg font-medium text-sm text-theme-main hover:bg-theme-muted">Pricing Guide</a>
+      <a href="pages/vehicle-types.html" class="block py-2.5 px-3 rounded-lg font-medium text-sm text-theme-main hover:bg-theme-muted">Vehicle Types</a>
+      <a href="pages/how-it-works.html" class="block py-2.5 px-3 rounded-lg font-medium text-sm text-theme-main hover:bg-theme-muted">How It Works</a>
+      <a href="pages/gallery.html" class="block py-2.5 px-3 rounded-lg font-medium text-sm text-theme-main hover:bg-theme-muted">Workshop Gallery</a>
+      <a href="pages/blog.html" class="block py-2.5 px-3 rounded-lg font-medium text-sm text-theme-main hover:bg-theme-muted">Technical Blog</a>
+      <a href="pages/faq.html" class="block py-2.5 px-3 rounded-lg font-medium text-sm text-theme-main hover:bg-theme-muted">FAQ</a>
+      <a href="pages/contact.html" class="block py-2.5 px-3 rounded-lg font-medium text-sm text-theme-main hover:bg-theme-muted">Contact Us</a>
+    </div>
+
+    <div class="p-5 border-t border-theme space-y-3 bg-theme-muted">
+      <div class="flex items-center justify-between gap-2">
+        <button type="button" data-dir-toggle class="flex-1 py-2 px-3 rounded-lg border border-theme bg-theme-surface text-xs font-mono-tech font-bold text-theme-main">
+          Switch to <span data-dir-label>RTL</span>
+        </button>
+        <button type="button" data-theme-toggle class="flex-1 py-2 px-3 rounded-lg border border-theme bg-theme-surface text-xs font-semibold text-theme-main">
+          Theme: <span class="theme-toggle-label">Dark</span>
+        </button>
+      </div>
+      <a href="pages/book-service.html" class="btn-amber w-full text-center">Book a Service</a>
+    </div>
+  </aside>
+
+  <!-- Main Page Content -->
+  <main id="main-content">
+
+  <!-- 1. HERO SECTION WITH BACKGROUND IMAGE -->
+  <section class="vc-hero-bg py-16 lg:py-24 border-b border-slate-800" style="background-image: url('assets/images/hero/hero-battery-diagnostics.jpg');">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-amber-400 font-mono-tech text-xs">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span>AUTOMOTIVE BATTERY &amp; ELECTRICAL SPECIALISTS</span>
+          </div>
+          <h1 class="font-heading text-3xl sm:text-5xl lg:text-[52px] font-extrabold text-white leading-[1.12]">
+            Reliable Battery &amp; Auto Electrical Care for Every Journey.
+          </h1>
+          <p class="text-slate-200 text-base sm:text-lg max-w-2xl leading-relaxed">
+            From battery testing and replacement to complete electrical diagnostics and wiring repairs, get dependable automotive electrical service from skilled technicians.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="pages/book-service.html" class="btn-amber text-base px-6 py-3.5">
+              <span>Book a Service</span>
+              <svg class="w-4 h-4 rtl-flip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="pages/services.html" class="btn-outline-light text-base px-6 py-3.5">
+              <span>Explore Our Services</span>
+            </a>
+          </div>
+          <!-- Service Trust Highlights -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-700/80">
+            <div class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-lg bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-400 shrink-0 font-mono-tech text-xs font-bold">01</span>
+              <div>
+                <h2 class="font-heading text-sm font-bold text-white">Structured Diagnostics</h2>
+                <p class="text-xs text-slate-300">Multimeter &amp; load testing before recommending repairs.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-lg bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-400 shrink-0 font-mono-tech text-xs font-bold">02</span>
+              <div>
+                <h2 class="font-heading text-sm font-bold text-white">Battery &amp; Charging Care</h2>
+                <p class="text-xs text-slate-300">Complete battery, starter motor, and alternator checks.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="w-8 h-8 rounded-lg bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-400 shrink-0 font-mono-tech text-xs font-bold">03</span>
+              <div>
+                <h2 class="font-heading text-sm font-bold text-white">Clear Price Guidance</h2>
+                <p class="text-xs text-slate-300">Transparent estimates explained prior to service work.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Photography Card -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden border-2 border-slate-700/90 shadow-2xl bg-slate-900">
+            <img src="assets/images/hero/hero-battery-diagnostics.jpg" alt="Technician inspecting a vehicle battery and engine bay electrical connections" class="w-full aspect-[4/3] object-cover">
+            <div class="p-4 bg-slate-900/95 border-t border-slate-800 flex items-center justify-between gap-4">
+              <div>
+                <span class="font-mono-tech text-[11px] text-amber-400 block">DIAGNOSTIC PROTOCOL</span>
+                <p class="text-xs text-slate-200 font-medium">Battery Load, Charging Voltage &amp; Circuit Integrity Check</p>
+              </div>
+              <a href="pages/electrical-diagnostics.html" class="btn-amber text-xs py-2 px-3">Diagnostics</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. QUICK DIAGNOSTICS SECTION -->
+  <section class="py-16 lg:py-20 bg-theme-bg border-b border-theme">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="tech-badge mb-3">SYMPTOM IDENTIFIER</span>
+          <h2 class="font-heading text-2xl sm:text-4xl font-bold text-theme-main">Electrical Problems? Start With the Right Diagnosis.</h2>
+          <p class="text-theme-secondary mt-2 max-w-2xl">Select a common vehicle symptom below to learn how our technicians inspect the affected system. Note: These indicators are informational and not a substitute for physical vehicle inspection.</p>
+        </div>
+        <a href="pages/book-service.html?service=Electrical%20Diagnostics" class="btn-amber shrink-0">Book a Diagnostic</a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs font-bold text-theme-accent mb-2 block">SYMPTOM 01</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Vehicle Won't Start</h3>
+            <p class="text-sm text-theme-secondary mb-4">Complete no-crank or single-click condition requiring battery load, starter relay, and solenoid circuit testing.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/starter-motor-repair.html" class="text-xs font-semibold text-theme-primary hover:underline">View Service →</a>
+              <span class="font-mono-tech text-[11px] text-theme-muted">STARTING</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs font-bold text-theme-accent mb-2 block">SYMPTOM 02</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Weak or Dead Battery</h3>
+            <p class="text-sm text-theme-secondary mb-4">Flat battery after parking overnight or requiring jump-starts. Evaluated via state-of-health and charge testing.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/battery-services.html" class="text-xs font-semibold text-theme-primary hover:underline">View Service →</a>
+              <span class="font-mono-tech text-[11px] text-theme-muted">BATTERY</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs font-bold text-theme-accent mb-2 block">SYMPTOM 03</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Slow Engine Cranking</h3>
+            <p class="text-sm text-theme-secondary mb-4">Sluggish engine turnover pointing to reduced battery cranking capacity, terminal resistance, or starter draw.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/battery-replacement.html" class="text-xs font-semibold text-theme-primary hover:underline">View Service →</a>
+              <span class="font-mono-tech text-[11px] text-theme-muted">CRANKING</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs font-bold text-theme-accent mb-2 block">SYMPTOM 04</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Dim Headlights</h3>
+            <p class="text-sm text-theme-secondary mb-4">Reduced or fluctuating headlamp output caused by aging bulbs, socket voltage drop, or alternator regulation.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/car-lighting.html" class="text-xs font-semibold text-theme-primary hover:underline">View Service →</a>
+              <span class="font-mono-tech text-[11px] text-theme-muted">LIGHTING</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs font-bold text-theme-accent mb-2 block">SYMPTOM 05</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Battery Warning Light</h3>
+            <p class="text-sm text-theme-secondary mb-4">Dashboard charging icon illuminated while driving, indicating alternator output, belt, or sense-circuit faults.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/alternator-repair.html" class="text-xs font-semibold text-theme-primary hover:underline">View Service →</a>
+              <span class="font-mono-tech text-[11px] text-theme-muted">CHARGING</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs font-bold text-theme-accent mb-2 block">SYMPTOM 06</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Repeated Battery Discharge</h3>
+            <p class="text-sm text-theme-secondary mb-4">Healthy battery draining while parked due to parasitic current draw, stuck relays, or charging deficits.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/electrical-diagnostics.html" class="text-xs font-semibold text-theme-primary hover:underline">View Service →</a>
+              <span class="font-mono-tech text-[11px] text-theme-muted">DIAGNOSTICS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs font-bold text-theme-accent mb-2 block">SYMPTOM 07</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Electrical Accessories Issue</h3>
+            <p class="text-sm text-theme-secondary mb-4">Inoperative cabin sockets, wipers, horns, or blown fuses traced through fuse block and harness continuity checks.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/wiring-repair.html" class="text-xs font-semibold text-theme-primary hover:underline">View Service →</a>
+              <span class="font-mono-tech text-[11px] text-theme-muted">WIRING</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs font-bold text-theme-accent mb-2 block">SYMPTOM 08</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Alternator Charging Fault</h3>
+            <p class="text-sm text-theme-secondary mb-4">Undercharging or overcharging voltage detected during loaded charging system and diode ripple inspection.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/alternator-repair.html" class="text-xs font-semibold text-theme-primary hover:underline">View Service →</a>
+              <span class="font-mono-tech text-[11px] text-theme-muted">ALTERNATOR</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. OUR CORE SERVICES SECTION -->
+  <section class="py-16 lg:py-20 bg-theme-surface border-b border-theme">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="tech-badge mb-3">SPECIALIST CAPABILITIES</span>
+        <h2 class="font-heading text-2xl sm:text-4xl font-bold text-theme-main">Our Core Battery &amp; Auto Electrical Services</h2>
+        <p class="text-theme-secondary mt-3">Dedicated diagnostic and repair solutions for automotive starting, charging, battery, wiring, and lighting systems.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/batteries/battery-health-check.jpg" alt="Technician performing automotive battery testing" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Battery Testing</h3>
+            <p class="text-sm text-theme-secondary mb-4">Digital conductance, open-circuit voltage, and load testing to verify battery health before replacement.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/battery-services.html" class="btn-outline text-xs py-2 px-3">Learn More</a>
+              <a href="pages/book-service.html?service=Battery%20Testing" class="btn-amber text-xs py-2 px-3">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/batteries/car-battery-replacement.jpg" alt="Automotive battery replacement in vehicle engine bay" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Battery Replacement</h3>
+            <p class="text-sm text-theme-secondary mb-4">Vehicle-matched battery selection, safe removal, terminal cleaning, and charging system verification.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/battery-replacement.html" class="btn-outline text-xs py-2 px-3">Learn More</a>
+              <a href="pages/book-service.html?service=Battery%20Replacement" class="btn-amber text-xs py-2 px-3">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/diagnostics/multimeter-electrical-testing.jpg" alt="Multimeter electrical diagnostics on automotive battery and circuits" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Electrical Diagnostics</h3>
+            <p class="text-sm text-theme-secondary mb-4">Root-cause fault finding for parasitic battery drains, warning lights, and intermittent circuit drops.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/electrical-diagnostics.html" class="btn-outline text-xs py-2 px-3">Learn More</a>
+              <a href="pages/book-service.html?service=Electrical%20Diagnostics" class="btn-amber text-xs py-2 px-3">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/wiring/automotive-wiring-inspection.jpg" alt="Automotive fuse box and electrical wiring harness inspection" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Wiring Inspection &amp; Repair</h3>
+            <p class="text-sm text-theme-secondary mb-4">Continuity testing, damaged loom repair, connector restoration, and fuse/relay block servicing.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/wiring-repair.html" class="btn-outline text-xs py-2 px-3">Learn More</a>
+              <a href="pages/book-service.html?service=Wiring%20Repair" class="btn-amber text-xs py-2 px-3">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/alternator/alternator-repair.jpg" alt="Automotive alternator assembly for charging system repair" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Alternator Inspection &amp; Repair</h3>
+            <p class="text-sm text-theme-secondary mb-4">Charging output measurement, voltage regulator testing, diode ripple checks, and alternator service.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/alternator-repair.html" class="btn-outline text-xs py-2 px-3">Learn More</a>
+              <a href="pages/book-service.html?service=Alternator%20Inspection" class="btn-amber text-xs py-2 px-3">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/starter-motor/starter-motor-inspection.jpg" alt="Starter motor and solenoid assembly inspection" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Starter Motor Inspection</h3>
+            <p class="text-sm text-theme-secondary mb-4">Starting circuit voltage-drop tests, solenoid signal checks, and starter motor repair or replacement.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/starter-motor-repair.html" class="btn-outline text-xs py-2 px-3">Learn More</a>
+              <a href="pages/book-service.html?service=Starter%20Motor%20Inspection" class="btn-amber text-xs py-2 px-3">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/lighting/vehicle-headlight-service.jpg" alt="Vehicle headlight and exterior lighting electrical inspection" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Lighting &amp; Electrical Accessories</h3>
+            <p class="text-sm text-theme-secondary mb-4">Headlight, tail light, indicator, cabin lighting, and auxiliary electrical circuit diagnosis and repair.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/car-lighting.html" class="btn-outline text-xs py-2 px-3">Learn More</a>
+              <a href="pages/book-service.html?service=Lighting%20and%20Accessories" class="btn-amber text-xs py-2 px-3">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/maintenance/battery-maintenance-service.jpg" alt="Battery terminal clamps and preventive battery maintenance" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Battery Maintenance</h3>
+            <p class="text-sm text-theme-secondary mb-4">Preventive terminal cleaning, corrosion treatment, clamp security, and seasonal state-of-charge checks.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/battery-maintenance.html" class="btn-outline text-xs py-2 px-3">Learn More</a>
+              <a href="pages/book-service.html?service=Battery%20Maintenance" class="btn-amber text-xs py-2 px-3">Book</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SIGNS YOUR VEHICLE NEEDS ELECTRICAL ATTENTION -->
+  <section class="py-16 lg:py-20 bg-theme-bg border-b border-theme">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-5">
+          <div class="vc-card overflow-hidden">
+            <img src="assets/images/diagnostics/engine-bay-diagnostics.jpg" alt="Vehicle engine bay with visible battery and electrical harness components during workshop inspection" class="w-full aspect-[4/3] object-cover" loading="lazy">
+            <div class="p-5 bg-theme-surface border-t border-theme">
+              <span class="font-mono-tech text-xs text-theme-accent uppercase">EARLY FAULT DETECTION</span>
+              <p class="text-sm text-theme-secondary mt-1">Addressing minor electrical symptoms early helps avoid inconvenient roadside no-start situations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-7 space-y-6">
+          <span class="tech-badge">VEHICLE HEALTH INDICATORS</span>
+          <h2 class="font-heading text-2xl sm:text-4xl font-bold text-theme-main">Signs Your Vehicle Needs Electrical Attention</h2>
+          <p class="text-theme-secondary">Automotive electrical issues often begin as subtle changes in starting behavior or lighting brightness before developing into a complete circuit failure.</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch">
+            <div class="p-4 rounded-xl bg-theme-surface border border-theme flex flex-col justify-between">
+              <h3 class="font-heading text-base font-bold text-theme-main mb-1">1. Slow Starting</h3>
+              <p class="text-xs text-theme-secondary">The engine takes longer to turn over, particularly during the first start of the morning.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-theme-surface border border-theme flex flex-col justify-between">
+              <h3 class="font-heading text-base font-bold text-theme-main mb-1">2. Dashboard Warning Lights</h3>
+              <p class="text-xs text-theme-secondary">Battery, charging, or electrical warning symbols stay lit or flicker while driving.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-theme-surface border border-theme flex flex-col justify-between">
+              <h3 class="font-heading text-base font-bold text-theme-main mb-1">3. Electrical Interruptions</h3>
+              <p class="text-xs text-theme-secondary">Power windows, cabin fans, or instrument displays reset or cut out intermittently.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-theme-surface border border-theme flex flex-col justify-between">
+              <h3 class="font-heading text-base font-bold text-theme-main mb-1">4. Dim or Flickering Lights</h3>
+              <p class="text-xs text-theme-secondary">Headlights or interior lamps change brightness between idle and cruising speed.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-theme-surface border border-theme flex flex-col justify-between">
+              <h3 class="font-heading text-base font-bold text-theme-main mb-1">5. Repeated Battery Problems</h3>
+              <p class="text-xs text-theme-secondary">A battery loses charge after sitting parked for a day or requires frequent recharging.</p>
+            </div>
+            <div class="p-4 rounded-xl bg-theme-surface border border-theme flex flex-col justify-between">
+              <h3 class="font-heading text-base font-bold text-theme-main mb-1">6. Unusual Electrical Behavior</h3>
+              <p class="text-xs text-theme-secondary">Blown fuses, clicking relays, or oxidized buildup around battery terminals and clamps.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. BATTERY SOLUTIONS SECTION -->
+  <section class="py-16 lg:py-20 bg-theme-surface border-b border-theme">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="tech-badge mb-3">BATTERY CARE &amp; FITMENT</span>
+          <h2 class="font-heading text-2xl sm:text-4xl font-bold text-theme-main">Complete Automotive Battery Solutions</h2>
+          <p class="text-theme-secondary mt-2 max-w-2xl">We test battery condition first, verify vehicle compatibility requirements, and inspect charging and terminal connections during every battery service.</p>
+        </div>
+        <a href="pages/battery-services.html" class="btn-outline shrink-0">Explore Battery Services</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/batteries/automotive-battery-unit.jpg" alt="Automotive 12V lead-acid starter battery unit" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs text-theme-accent mb-1 block">STEP 01 • EVALUATION</span>
+            <h3 class="font-heading text-xl font-bold text-theme-main mb-2">State-of-Health &amp; Load Testing</h3>
+            <p class="text-sm text-theme-secondary mb-4">We measure resting voltage and cold-cranking conductance to determine whether your existing battery simply needs recharging or requires replacement.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/battery-services.html" class="btn-outline text-xs py-2 px-3.5">Testing Details</a>
+              <a href="pages/book-service.html?service=Battery%20Testing" class="btn-amber text-xs py-2 px-3.5">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/batteries/car-battery-replacement.jpg" alt="Specification-matched car battery installed in vehicle engine bay" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs text-theme-accent mb-1 block">STEP 02 • SELECTION &amp; FITMENT</span>
+            <h3 class="font-heading text-xl font-bold text-theme-main mb-2">Specification-Matched Replacement</h3>
+            <p class="text-sm text-theme-secondary mb-4">Battery selection is guided by your vehicle's physical group size, terminal polarity, hold-down design, and electrical load requirements.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/battery-replacement.html" class="btn-outline text-xs py-2 px-3.5">Replacement Guide</a>
+              <a href="pages/book-service.html?service=Battery%20Replacement" class="btn-amber text-xs py-2 px-3.5">Book</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/batteries/battery-terminal-inspection.jpg" alt="Close-up of clean automotive starter battery terminals" loading="lazy">
+          </div>
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs text-theme-accent mb-1 block">STEP 03 • PROTECTION</span>
+            <h3 class="font-heading text-xl font-bold text-theme-main mb-2">Terminal &amp; Charging Verification</h3>
+            <p class="text-sm text-theme-secondary mb-4">Every battery service includes terminal post cleaning, secure bracket mounting, and a post-fitment charging voltage check.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/battery-maintenance.html" class="btn-outline text-xs py-2 px-3.5">Maintenance Care</a>
+              <a href="pages/book-service.html?service=Battery%20Maintenance" class="btn-amber text-xs py-2 px-3.5">Book</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. WHY CHOOSE VOLTCARE? -->
+  <section class="py-16 lg:py-20 bg-brand-navy text-white border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-block font-mono-tech text-xs uppercase tracking-widest px-3 py-1 rounded bg-slate-800 text-amber-400 border border-slate-700 mb-3">WORKSHOP STANDARDS</span>
+        <h2 class="font-heading text-2xl sm:text-4xl font-bold text-white">Why Choose VOLTCARE?</h2>
+        <p class="text-slate-300 mt-3">A practical, diagnostic-first approach to automotive battery and electrical repair.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+        <div class="p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col">
+          <span class="font-mono-tech text-xs text-amber-400">01 / FOCUS</span>
+          <h3 class="font-heading text-lg font-bold text-white mt-2 mb-2 min-h-[2.75rem]">Focused Automotive Electrical Services</h3>
+          <p class="text-sm text-slate-300 flex-1">Rather than treating electrical faults as an afterthought, our workflow is built specifically around vehicle batteries, starting, charging, and wiring systems.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col">
+          <span class="font-mono-tech text-xs text-amber-400">02 / TESTING</span>
+          <h3 class="font-heading text-lg font-bold text-white mt-2 mb-2 min-h-[2.75rem]">Professional Diagnostic Approach</h3>
+          <p class="text-sm text-slate-300 flex-1">We test circuits, measure voltage drop, and verify component behavior before recommending parts replacement.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col">
+          <span class="font-mono-tech text-xs text-amber-400">03 / CLARITY</span>
+          <h3 class="font-heading text-lg font-bold text-white mt-2 mb-2 min-h-[2.75rem]">Clear Service Explanations</h3>
+          <p class="text-sm text-slate-300 flex-1">Technicians explain inspection findings in plain, straightforward language so you understand what your vehicle needs and why.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col">
+          <span class="font-mono-tech text-xs text-amber-400">04 / TRANSPARENCY</span>
+          <h3 class="font-heading text-lg font-bold text-white mt-2 mb-2 min-h-[2.75rem]">Transparent Price Guidance</h3>
+          <p class="text-sm text-slate-300 flex-1">Clear indicative pricing categories and upfront repair estimates confirmed before workshop labour proceeds.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col">
+          <span class="font-mono-tech text-xs text-amber-400">05 / SUITABILITY</span>
+          <h3 class="font-heading text-lg font-bold text-white mt-2 mb-2 min-h-[2.75rem]">Suitable Battery &amp; Electrical Solutions</h3>
+          <p class="text-sm text-slate-300 flex-1">Repairs and replacement components are selected based on your vehicle's actual electrical specifications and operating demands.</p>
+        </div>
+        <div class="p-6 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col">
+          <span class="font-mono-tech text-xs text-amber-400">06 / CONVENIENCE</span>
+          <h3 class="font-heading text-lg font-bold text-white mt-2 mb-2 min-h-[2.75rem]">Customer-Focused Booking Process</h3>
+          <p class="text-sm text-slate-300 flex-1">Submit your vehicle details and symptom notes online to prepare a structured service request for workshop follow-up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. OUR SERVICE PROCESS (PERFECTLY ALIGNED 4-STEP CARDS — FIXES IMAGE 2) -->
+  <section class="py-16 lg:py-20 bg-theme-bg border-b border-theme">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="tech-badge mb-3">WORKFLOW</span>
+        <h2 class="font-heading text-2xl sm:text-4xl font-bold text-theme-main">Our 4-Step Service Process</h2>
+        <p class="text-theme-secondary mt-2">From initial enquiry to verified repair. All repair estimates are subject to physical vehicle inspection where applicable.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <div class="mb-4">
+              <span class="inline-block font-mono-tech text-xs font-bold px-3 py-1 rounded bg-brand-navy text-amber-400">STEP 01</span>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Tell Us About Your Vehicle Details</h3>
+            <p class="text-sm text-theme-secondary mb-4">Share your vehicle make, model, year, and the electrical or starting symptoms you have observed.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <span class="font-mono-tech text-xs text-theme-muted">INTAKE STAGE</span>
+              <a href="pages/book-service.html" class="text-xs font-semibold text-theme-primary hover:underline">Start →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <div class="mb-4">
+              <span class="inline-block font-mono-tech text-xs font-bold px-3 py-1 rounded bg-brand-navy text-amber-400">STEP 02</span>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Schedule a Service Request</h3>
+            <p class="text-sm text-theme-secondary mb-4">Select your preferred date and time window using our service request form for workshop coordination.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <span class="font-mono-tech text-xs text-theme-muted">SCHEDULING</span>
+              <a href="pages/how-it-works.html" class="text-xs font-semibold text-theme-primary hover:underline">Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <div class="mb-4">
+              <span class="inline-block font-mono-tech text-xs font-bold px-3 py-1 rounded bg-brand-navy text-amber-400">STEP 03</span>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Vehicle Inspection &amp; Diagnosis</h3>
+            <p class="text-sm text-theme-secondary mb-4">Our technicians perform targeted battery, charging, starting, or circuit testing on your vehicle.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <span class="font-mono-tech text-xs text-theme-muted">DIAGNOSTICS</span>
+              <a href="pages/electrical-diagnostics.html" class="text-xs font-semibold text-theme-primary hover:underline">Process →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <div class="mb-4">
+              <span class="inline-block font-mono-tech text-xs font-bold px-3 py-1 rounded bg-brand-navy text-amber-400">STEP 04</span>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Repair Recommendation &amp; Service</h3>
+            <p class="text-sm text-theme-secondary mb-4">We review the diagnostic findings and confirm the recommended repair estimate with you before work begins.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <span class="font-mono-tech text-xs text-theme-muted">VERIFICATION</span>
+              <a href="pages/pricing-guide.html" class="text-xs font-semibold text-theme-primary hover:underline">Pricing →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. TRANSPARENT PRICING PREVIEW -->
+  <section class="py-16 lg:py-20 bg-theme-surface border-b border-theme">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <span class="tech-badge-amber mb-3">ILLUSTRATIVE / CONFIGURABLE ESTIMATES</span>
+          <h2 class="font-heading text-2xl sm:text-4xl font-bold text-theme-main">Transparent Service Pricing Preview</h2>
+          <p class="text-theme-secondary mt-2 max-w-2xl">Sample starting estimates for common workshop inspections and services.</p>
+        </div>
+        <a href="pages/pricing-guide.html" class="btn-amber shrink-0">View Full Pricing Guide</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 items-stretch">
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs text-theme-muted mb-1 block">BATTERY SERVICES</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Battery Health Check</h3>
+            <div class="font-mono-tech text-xl font-bold text-theme-accent mb-3">From $25 <span class="text-xs font-normal text-theme-muted">(Illustrative)</span></div>
+            <p class="text-xs text-theme-secondary mb-4">Electronic state-of-charge, voltage, and load conductance check with terminal inspection.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/book-service.html?service=Battery%20Testing" class="btn-outline text-xs py-2 px-3 w-full">Request Service</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs text-theme-muted mb-1 block">BATTERY FITMENT</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Battery Replacement Labour</h3>
+            <div class="font-mono-tech text-xl font-bold text-theme-accent mb-3">From $35 <span class="text-xs font-normal text-theme-muted">(Illustrative)</span></div>
+            <p class="text-xs text-theme-secondary mb-4">Installation labour, clamp cleaning, and charging check (battery unit cost varies by vehicle).</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/book-service.html?service=Battery%20Replacement" class="btn-outline text-xs py-2 px-3 w-full">Request Service</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs text-theme-muted mb-1 block">DIAGNOSTICS</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Electrical Fault Inspection</h3>
+            <div class="font-mono-tech text-xl font-bold text-theme-accent mb-3">From $65 <span class="text-xs font-normal text-theme-muted">(Illustrative)</span></div>
+            <p class="text-xs text-theme-secondary mb-4">Systematic multimeter and circuit diagnostic for parasitic drain or warning lights.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/book-service.html?service=Electrical%20Diagnostics" class="btn-outline text-xs py-2 px-3 w-full">Request Service</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-xs text-theme-muted mb-1 block">CHARGING &amp; STARTING</span>
+            <h3 class="font-heading text-lg font-bold text-theme-main mb-2">Alternator / Starter Check</h3>
+            <div class="font-mono-tech text-xl font-bold text-theme-accent mb-3">From $40 <span class="text-xs font-normal text-theme-muted">(Illustrative)</span></div>
+            <p class="text-xs text-theme-secondary mb-4">Loaded charging output, ripple check, and starting circuit voltage-drop evaluation.</p>
+            <div class="vc-card-footer border-t border-theme">
+              <a href="pages/book-service.html?service=Alternator%20Inspection" class="btn-outline text-xs py-2 px-3 w-full">Request Service</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="p-4 rounded-xl bg-theme-muted border border-theme text-xs text-theme-secondary">
+        <strong class="text-theme-main">Pricing Disclaimer:</strong> Displayed prices are indicative examples and may vary depending on vehicle type, parts requirements, and inspection findings. A final estimate should be confirmed before work begins.
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. WORKSHOP AND TECHNICIAN GALLERY PREVIEW -->
+  <section class="py-16 lg:py-20 bg-theme-bg border-b border-theme">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div>
+          <span class="tech-badge mb-3">WORKSHOP ENVIRONMENT</span>
+          <h2 class="font-heading text-2xl sm:text-4xl font-bold text-theme-main">Inside Our Electrical Service Bay</h2>
+          <p class="text-theme-secondary mt-2">Real photographs of battery testing, multimeter diagnostics, wiring inspection, and lighting service.</p>
+        </div>
+        <a href="pages/gallery.html" class="btn-outline shrink-0">Open Full Gallery</a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+        <div class="vc-card overflow-hidden">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/batteries/battery-health-check.jpg" alt="Battery testing equipment connected to vehicle battery terminals" loading="lazy">
+          </div>
+          <div class="p-4">
+            <span class="font-mono-tech text-xs text-theme-accent">BATTERY TESTING</span>
+            <h3 class="font-heading text-base font-bold text-theme-main mt-0.5">Load &amp; State-of-Charge Verification</h3>
+          </div>
+        </div>
+        <div class="vc-card overflow-hidden">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/batteries/car-battery-replacement.jpg" alt="Installed automotive battery inside engine compartment" loading="lazy">
+          </div>
+          <div class="p-4">
+            <span class="font-mono-tech text-xs text-theme-accent">BATTERY INSTALLATION</span>
+            <h3 class="font-heading text-base font-bold text-theme-main mt-0.5">Clean Terminal &amp; Hold-Down Fitment</h3>
+          </div>
+        </div>
+        <div class="vc-card overflow-hidden">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/diagnostics/multimeter-electrical-testing.jpg" alt="Technician performing digital multimeter voltage test" loading="lazy">
+          </div>
+          <div class="p-4">
+            <span class="font-mono-tech text-xs text-theme-accent">DIAGNOSTICS</span>
+            <h3 class="font-heading text-base font-bold text-theme-main mt-0.5">Precision Multimeter Circuit Testing</h3>
+          </div>
+        </div>
+        <div class="vc-card overflow-hidden">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/wiring/automotive-wiring-inspection.jpg" alt="Engine compartment fuse box and wiring harness inspection" loading="lazy">
+          </div>
+          <div class="p-4">
+            <span class="font-mono-tech text-xs text-theme-accent">WIRING INSPECTION</span>
+            <h3 class="font-heading text-base font-bold text-theme-main mt-0.5">Fuse Block &amp; Loom Continuity Checks</h3>
+          </div>
+        </div>
+        <div class="vc-card overflow-hidden">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/workshop/automotive-technician-workshop.jpg" alt="Automotive technician inspecting engine bay components in workshop" loading="lazy">
+          </div>
+          <div class="p-4">
+            <span class="font-mono-tech text-xs text-theme-accent">WORKSHOP BAY</span>
+            <h3 class="font-heading text-base font-bold text-theme-main mt-0.5">Structured Engine-Bay Electrical Service</h3>
+          </div>
+        </div>
+        <div class="vc-card overflow-hidden">
+          <div class="vc-card-media-4x3">
+            <img src="assets/images/lighting/taillight-bulb-installation.jpg" alt="Technician with protective gloves servicing vehicle tail light assembly" loading="lazy">
+          </div>
+          <div class="p-4">
+            <span class="font-mono-tech text-xs text-theme-accent">LIGHTING INSPECTION</span>
+            <h3 class="font-heading text-base font-bold text-theme-main mt-0.5">Exterior Lamp &amp; Socket Servicing</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. CUSTOMER TESTIMONIALS WITH REAL PROFILE IMAGES & EQUAL ALIGNMENT (FIXES IMAGE 3) -->
+  <section class="py-16 lg:py-20 bg-theme-surface border-b border-theme">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="tech-badge-amber mb-3">ILLUSTRATIVE SAMPLE FEEDBACK</span>
+        <h2 class="font-heading text-2xl sm:text-4xl font-bold text-theme-main">Illustrative Service Experience Scenarios</h2>
+        <p class="text-theme-secondary mt-2 text-sm">The cards below are clearly labelled illustrative examples demonstrating typical customer service scenarios. Replace with verified owner-collected feedback prior to publication.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-[11px] text-theme-accent uppercase mb-3 block">[Illustrative Scenario — Battery &amp; Charging]</span>
+            <p class="text-sm text-theme-main italic mb-6">"Instead of immediately selling a replacement battery, the technician tested both the battery and alternator output, showing that a corroded ground connection was preventing proper charging."</p>
+            <div class="vc-card-footer border-t border-theme">
+              <div class="flex items-center gap-3">
+                <img src="assets/images/technicians/profile-owner-1.jpg" alt="Profile portrait of sample sedan owner" class="w-11 h-11 rounded-full object-cover border-2 border-amber-400 shrink-0" loading="lazy">
+                <div>
+                  <strong class="text-xs font-bold text-theme-main block">Sample Vehicle Owner</strong>
+                  <span class="text-xs text-theme-secondary">Sedan Charging Inspection</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-[11px] text-theme-accent uppercase mb-3 block">[Illustrative Scenario — Parasitic Drain]</span>
+            <p class="text-sm text-theme-main italic mb-6">"Clear explanation of how overnight battery drain testing works. Having the diagnostic steps and estimate outlined before any wiring repair began made the process straightforward."</p>
+            <div class="vc-card-footer border-t border-theme">
+              <div class="flex items-center gap-3">
+                <img src="assets/images/technicians/profile-owner-2.jpg" alt="Profile portrait of sample hatchback owner" class="w-11 h-11 rounded-full object-cover border-2 border-amber-400 shrink-0" loading="lazy">
+                <div>
+                  <strong class="text-xs font-bold text-theme-main block">Sample Vehicle Owner</strong>
+                  <span class="text-xs text-theme-secondary">Electrical Diagnostics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vc-card">
+          <div class="vc-card-body">
+            <span class="font-mono-tech text-[11px] text-theme-accent uppercase mb-3 block">[Illustrative Scenario — Starter Circuit]</span>
+            <p class="text-sm text-theme-main italic mb-6">"Helpful booking enquiry form where I could describe the intermittent clicking sound on warm starts. The starting circuit check pinpointed the faulty starter solenoid."</p>
+            <div class="vc-card-footer border-t border-theme">
+              <div class="flex items-center gap-3">
+                <img src="assets/images/technicians/profile-owner-3.jpg" alt="Profile portrait of sample SUV owner" class="w-11 h-11 rounded-full object-cover border-2 border-amber-400 shrink-0" loading="lazy">
+                <div>
+                  <strong class="text-xs font-bold text-theme-main block">Sample Vehicle Owner</strong>
+                  <span class="text-xs text-theme-secondary">Starter Motor Service</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FREQUENTLY ASKED QUESTIONS PREVIEW -->
+  <section class="py-16 lg:py-20 bg-theme-bg border-b border-theme">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+        <div>
+          <span class="tech-badge mb-2">COMMON QUESTIONS</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-theme-main">Frequently Asked Questions</h2>
+        </div>
+        <a href="pages/faq.html" class="btn-outline text-xs py-2.5 px-4">View All FAQs</a>
+      </div>
+
+      <div class="space-y-4">
+        <div class="vc-accordion-item is-active">
+          <button type="button" class="vc-accordion-trigger" aria-expanded="true">
+            <span>How do I know if my car needs a new battery or an alternator repair?</span>
+            <svg class="vc-accordion-icon w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="vc-accordion-content">
+            Symptoms of a weak battery and a failing alternator frequently overlap. During a workshop check, we test the battery's state-of-health and load capacity first, and then measure alternator charging voltage and diode ripple with the engine running to confirm which component is at fault.
+          </div>
+        </div>
+
+        <div class="vc-accordion-item">
+          <button type="button" class="vc-accordion-trigger" aria-expanded="false">
+            <span>Does submitting the online booking form guarantee an immediate appointment slot?</span>
+            <svg class="vc-accordion-icon w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="vc-accordion-content">
+            Submitting the online form prepares your service enquiry details and preferred schedule. Final appointment confirmation requires direct workshop follow-up or a connected backend booking system.
+          </div>
+        </div>
+
+        <div class="vc-accordion-item">
+          <button type="button" class="vc-accordion-trigger" aria-expanded="false">
+            <span>Why do electrical repair estimates require physical vehicle inspection?</span>
+            <svg class="vc-accordion-icon w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="vc-accordion-content">
+            Multiple electrical faults can cause the same warning light or no-start condition. Inspecting the vehicle allows technicians to isolate whether the issue is a blown fuse, a corroded terminal, a damaged wire, or a failed component before quoting the final repair cost.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. BOOK A SERVICE CTA -->
+  <section class="py-16 bg-brand-navy text-white border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl bg-slate-900/90 border border-slate-700 p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="max-w-2xl">
+          <span class="font-mono-tech text-xs text-amber-400 uppercase tracking-widest">READY WHEN YOU ARE</span>
+          <h2 class="font-heading text-2xl sm:text-4xl font-bold text-white mt-2 mb-3">Schedule Your Vehicle Battery or Electrical Check</h2>
+          <p class="text-slate-300 text-sm sm:text-base">Share your vehicle make, model, and symptoms online. We will review your request and guide you through the appropriate inspection options.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-4 shrink-0">
+          <a href="pages/book-service.html" class="btn-amber text-base px-6 py-3.5">Book a Service Request</a>
+          <a href="pages/pricing-guide.html" class="btn-outline-light text-base px-6 py-3.5">View Pricing Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. CONTACT AND LOCATION PREVIEW -->
+  <section class="py-16 lg:py-20 bg-theme-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div class="lg:col-span-5 vc-card p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <span class="tech-badge mb-3">WORKSHOP ENQUIRIES</span>
+            <h2 class="font-heading text-2xl font-bold text-theme-main mb-3">Contact &amp; Workshop Location</h2>
+            <p class="text-sm text-theme-secondary mb-6">Need guidance on a battery, starter, alternator, or wiring problem? Reach out to our team or configure your workshop location details below.</p>
+            <div class="space-y-4 text-sm">
+              <div class="p-3.5 rounded-lg bg-theme-muted border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent block">WORKSHOP ADDRESS (PLACEHOLDER)</span>
+                <span class="text-theme-main font-medium">[Configure Business Street Address, City &amp; Postal Code]</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-theme-muted border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent block">DIRECT CONTACT (PLACEHOLDER)</span>
+                <span class="text-theme-main font-medium">Phone: [Configure Phone] • Email: [Configure Email]</span>
+              </div>
+              <div class="p-3.5 rounded-lg bg-theme-muted border border-theme">
+                <span class="font-mono-tech text-xs text-theme-accent block">SERVICE HOURS (PLACEHOLDER)</span>
+                <span class="text-theme-main font-medium">Mon–Sat: [Configure Opening Hours]</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6 mt-6 border-t border-theme flex flex-wrap gap-3">
+            <a href="pages/contact.html" class="btn-amber text-xs py-2.5 px-4">Open Contact Form</a>
+            <a href="pages/how-it-works.html" class="btn-outline text-xs py-2.5 px-4">How Booking Works</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 vc-card overflow-hidden flex flex-col justify-between p-6 sm:p-8">
+          <div>
+            <span class="tech-badge mb-3">INTERACTIVE WORKSHOP MAP</span>
+            <h3 class="font-heading text-2xl font-bold text-theme-main mb-2">Convenient Workshop Access for Vehicle Drop-Off &amp; Inspection</h3>
+            <p class="text-sm text-theme-secondary mb-4">Interactive map preview below. Configure your verified business coordinates in production so customers can plan their route directly to your service bay.</p>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-theme bg-theme-muted flex-1 min-h-[230px]">
+            <iframe
+              title="VOLTCARE Workshop Location Map Preview"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1450%2C51.5050%2C-0.1150%2C51.5200&amp;layer=mapnik&amp;marker=51.5125%2C-0.1300"
+              class="w-full h-full min-h-[230px] border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="mt-6 pt-5 border-t border-theme flex flex-wrap items-center justify-between gap-4">
+            <div class="text-xs text-theme-secondary">
+              <strong class="text-theme-main block">Supported Vehicle Categories:</strong>
+              Hatchbacks • Sedans • SUVs • MUVs • Selected Commercial Vehicles
+            </div>
+            <a href="pages/contact.html#workshop-map" class="btn-amber text-xs py-2.5 px-4">Get Directions Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Complete Standalone Footer -->
+  <footer class="bg-brand-deep text-slate-300 border-t border-slate-800 pt-16 pb-12" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+
+        <!-- Column 1: Brand Identity -->
+        <div class="lg:col-span-2 space-y-4">
+          <a href="index.html" class="inline-flex items-center gap-3">
+            <svg class="w-10 h-10 shrink-0" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="64" height="64" rx="14" fill="#172A3A" stroke="#354B5C" stroke-width="2"/>
+              <path d="M18 22H46C48.2091 22 50 23.7909 50 26V44C50 46.2091 48.2091 48 46 48H18C15.7909 48 14 46.2091 14 44V26C14 23.7909 15.7909 22 18 22Z" stroke="#DCE4EA" stroke-width="2.5"/>
+              <rect x="20" y="16" width="8" height="6" rx="1.5" fill="#DCE4EA"/>
+              <rect x="36" y="16" width="8" height="6" rx="1.5" fill="#F2A93B"/>
+              <path d="M34.5 26L25 36.5H32.5L29.5 44L39 33.5H31.5L34.5 26Z" fill="#F2A93B"/>
+            </svg>
+            <div>
+              <span class="font-heading font-extrabold text-xl tracking-wider text-white block leading-none">VOLT<span class="text-[#F2A93B]">CARE</span></span>
+              <span class="font-mono-tech text-[11px] tracking-widest text-amber-400 block mt-1">Powering Every Journey.</span>
+            </div>
+          </a>
+          <p class="text-sm text-slate-300 max-w-md leading-relaxed">
+            VOLTCARE is a dedicated automotive battery and electrical repair workshop focused on structured vehicle diagnostics, battery inspection and replacement, starter and alternator servicing, and precision wiring repair.
+          </p>
+          <div class="pt-2">
+            <p class="font-mono-tech text-xs uppercase tracking-wider text-slate-400 mb-2">Social Channels (Owner Configurable)</p>
+            <div class="flex items-center gap-2.5">
+              <a href="pages/contact.html#social-channels" class="px-3 py-1.5 rounded bg-slate-800/80 hover:bg-slate-700 text-xs font-mono-tech text-slate-200 border border-slate-700 transition-colors" aria-label="Workshop Social Profile Placeholder 1">FB / Meta</a>
+              <a href="pages/contact.html#social-channels" class="px-3 py-1.5 rounded bg-slate-800/80 hover:bg-slate-700 text-xs font-mono-tech text-slate-200 border border-slate-700 transition-colors" aria-label="Workshop Social Profile Placeholder 2">IG / Workshop</a>
+              <a href="pages/contact.html#social-channels" class="px-3 py-1.5 rounded bg-slate-800/80 hover:bg-slate-700 text-xs font-mono-tech text-slate-200 border border-slate-700 transition-colors" aria-label="Workshop Social Profile Placeholder 3">Maps Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="font-heading text-sm font-bold uppercase tracking-wider text-white mb-4">Quick Links</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="index.html" class="hover:text-amber-400 transition-colors">Home 1 (Primary)</a></li>
+            <li><a href="pages/home-2.html" class="hover:text-amber-400 transition-colors">Home 2 (Diagnostic)</a></li>
+            <li><a href="pages/about.html" class="hover:text-amber-400 transition-colors">About VOLTCARE</a></li>
+            <li><a href="pages/services.html" class="hover:text-amber-400 transition-colors">All Services</a></li>
+            <li><a href="pages/pricing-guide.html" class="hover:text-amber-400 transition-colors">Pricing Guide</a></li>
+            <li><a href="pages/vehicle-types.html" class="hover:text-amber-400 transition-colors">Supported Vehicles</a></li>
+            <li><a href="pages/how-it-works.html" class="hover:text-amber-400 transition-colors">How It Works</a></li>
+            <li><a href="pages/gallery.html" class="hover:text-amber-400 transition-colors">Workshop Gallery</a></li>
+            <li><a href="pages/blog.html" class="hover:text-amber-400 transition-colors">Technical Blog</a></li>
+            <li><a href="pages/faq.html" class="hover:text-amber-400 transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Specialist Services -->
+        <div>
+          <h3 class="font-heading text-sm font-bold uppercase tracking-wider text-white mb-4">Service Categories</h3>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="pages/battery-services.html" class="hover:text-amber-400 transition-colors">Battery Services</a></li>
+            <li><a href="pages/battery-replacement.html" class="hover:text-amber-400 transition-colors">Battery Replacement</a></li>
+            <li><a href="pages/electrical-diagnostics.html" class="hover:text-amber-400 transition-colors">Electrical Diagnostics</a></li>
+            <li><a href="pages/wiring-repair.html" class="hover:text-amber-400 transition-colors">Wiring Inspection &amp; Repair</a></li>
+            <li><a href="pages/alternator-repair.html" class="hover:text-amber-400 transition-colors">Alternator Inspection &amp; Repair</a></li>
+            <li><a href="pages/starter-motor-repair.html" class="hover:text-amber-400 transition-colors">Starter Motor Repair</a></li>
+            <li><a href="pages/car-lighting.html" class="hover:text-amber-400 transition-colors">Car Lighting &amp; Accessories</a></li>
+            <li><a href="pages/battery-maintenance.html" class="hover:text-amber-400 transition-colors">Battery Maintenance</a></li>
+            <li><a href="pages/service-details.html" class="hover:text-amber-400 transition-colors">Service Specifications</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Workshop Contact & Booking Placeholders -->
+        <div>
+          <h3 class="font-heading text-sm font-bold uppercase tracking-wider text-white mb-4">Workshop &amp; Booking</h3>
+          <div class="space-y-3 text-xs text-slate-300 bg-slate-900/70 p-4 rounded-xl border border-slate-800">
+            <div>
+              <span class="font-mono-tech text-[11px] text-amber-400 block">LOCATION PLACEHOLDER</span>
+              <span>[Workshop Street Address &amp; Service Area — Configure in Production]</span>
+            </div>
+            <div>
+              <span class="font-mono-tech text-[11px] text-amber-400 block">PHONE &amp; EMAIL PLACEHOLDER</span>
+              <span>Phone: [Configure Workshop Phone]</span><br>
+              <span>Email: [Configure Workshop Email]</span>
+            </div>
+            <div>
+              <span class="font-mono-tech text-[11px] text-amber-400 block">OPENING HOURS PLACEHOLDER</span>
+              <span>Mon–Sat: [Configure Workshop Hours]</span>
+            </div>
+          </div>
+          <div class="mt-4 flex flex-col gap-2">
+            <a href="pages/book-service.html" class="btn-amber text-xs py-2.5 w-full text-center">Book a Service Request</a>
+            <a href="pages/contact.html" class="btn-outline-light text-xs py-2 w-full text-center">Send Service Enquiry</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal & Copyright Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© 2026 VOLTCARE — Battery &amp; Auto Electrical Specialists. All rights reserved.</p>
+        <div class="flex flex-wrap items-center gap-5">
+          <a href="pages/privacy-policy.html" class="hover:text-amber-400 transition-colors">Privacy Policy</a>
+          <a href="pages/terms.html" class="hover:text-amber-400 transition-colors">Terms &amp; Conditions</a>
+          <a href="pages/coming-soon.html" class="hover:text-amber-400 transition-colors">Upcoming Features</a>
+          <a href="pages/404.html" class="hover:text-amber-400 transition-colors">404 Page</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button type="button" data-back-to-top class="vc-back-to-top" aria-label="Scroll back to top">
+    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Modular Vanilla JavaScript Stack -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/direction.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/services.js"></script>
+  <script src="assets/js/pricing.js"></script>
+  <script src="assets/js/booking.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
